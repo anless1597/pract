@@ -1,0 +1,297 @@
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    background: #ececec;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.header {
+    font-size: 30px;
+    color:black;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
+.form{
+    width: 100%;
+}
+
+.input-form {
+    margin:  15px 40px;
+    text-align: center;
+}
+
+.input-form input {
+    padding:  10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-form input[type="text"]:focus, .input-form input[type="password"]:focus {
+    border: 1px solid #4fa3e3;
+    border-radius: 10px;
+}
+
+.input-form input[type="button"] {
+    background: #4fa3e3;
+    padding: 7px;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    transition: .2s;
+    margin-top: 10px;
+}
+
+.input-form input[type="button"]:hover{
+    color: #ececec;
+}
+
+.register-line{
+    text-align: center;
+    font-size: 13px;
+    padding: 0 0 20px;
+}
+
+.register-line-link {
+    color: #4fa3e3;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.profile-container {
+    max-width: 100%;
+    min-width: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #ececec;
+    padding: 3%;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin: 0 50px 0;
+    position: relative;
+    width: 100%;
+}
+
+.profile h2 {
+    margin-top: 0;
+}
+
+.new-task-button input{
+    padding: 7px;
+    min-width: 30%;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.new-task-button input[name="new-task"]{
+    background: #4fa3e3;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.new-task-button input[name="new-task"]:hover{
+    color: #ececec;
+}
+
+.group {
+    text-align: right;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+.group select {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.profile th {
+    border: 1px solid #aaaaaa;
+    padding: 1%;
+    background: #d2d2d2;
+}
+
+.profile th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.profile th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.profile td {
+    border: 1px solid #aaaaaa;
+    padding: 1%;
+    background: #d2d2d2;
+}
+
+.profile tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.profile tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.modal {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: #000000D8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 30px 15px;
+}
+
+.modal-active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .2s;
+}
+
+.modal-content {
+    width: 700px;
+    max-width: 100%;
+    background: #ececec;
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.modal-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.modal-input label{
+    margin: 5px 0;
+}
+
+.modal-input p{
+    margin: 0;
+}
+
+.modal-input input{
+    padding: 5px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal-input textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+}
+
+.modal-input input[type="text"]:focus, textarea:focus, input[type="date"]:focus{
+    border: 1px solid #4fa3e3;
+    border-radius: 10px;
+}
+
+.modal-active select {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    width: 70%;
+}
+
+.modal-input input[type="button"] {
+    background: #4fa3e3;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    transition: .2s;
+    margin-top: 20px;
+}
+
+.modal-input input[type="button"]:hover {
+    color: #ececec;
+}
+
+.exit-button input{
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+.exit-button input[name="exit"]{
+    background: #4fa3e3;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.exit-button input[name="exit"]:hover{
+    color: #ececec;
+}

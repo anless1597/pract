@@ -1,0 +1,14 @@
+body {
+    background: #4fa3e3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: black;
+    margin: 0;
+    line-height: 1;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
